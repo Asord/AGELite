@@ -24,6 +24,7 @@ class _globals:
             print("\x1b[33mAGEutils.dll not found\x1b[0m")
             hllDll = None
     except Exception as e:
+        # IMPORTANT: if the DLL did not load sucessfully, it might be because you don't have msvc143 installed in your computer. 
         hllDll = None
         print(f"\x1b[33mAGEutils.dll can't be initialized:\n{e}\x1b[0m")
 
